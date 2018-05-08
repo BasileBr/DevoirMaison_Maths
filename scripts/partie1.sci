@@ -16,7 +16,7 @@ endfunction
 
 function main()
     chdir(CHEMIN);
-    Calcul_Uniforme(1,30,30)
+
 end
 
 main()

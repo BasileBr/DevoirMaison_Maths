@@ -14,9 +14,12 @@ function Calcul_Uniforme(borne_a,borne_b,iteration)
     end*/
 endfunction
 
+<<<<<<< Updated upstream
 function main()
     chdir(CHEMIN);
 
 end
 
 main()
+=======
+>>>>>>> Stashed changes

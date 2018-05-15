@@ -8,8 +8,8 @@ function main()
     //getd('utils');
     getd('scripts');
     
-    Calcul_Uniforme(1,30,30)
+    Calcul_Uniforme(0,1,1000)
 
-end
+endfunction
 
 main()

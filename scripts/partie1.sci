@@ -26,16 +26,12 @@ function Y = Calcul_Uniforme(borne_a,borne_b,iteration)
 
 endfunction
 
-<<<<<<< Updated upstream
-function main()
-<<<<<<< Updated upstream
-    chdir(CHEMIN);
 
-=======
-    Calcul_Uniforme(0,1,1000)
->>>>>>> Stashed changes
-end
+//function main()
+//    chdir(CHEMIN);
+//    Calcul_Uniforme(0,1,1000)
 
-main()
-=======
->>>>>>> Stashed changes
+//end
+
+//main()
+

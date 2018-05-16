@@ -16,10 +16,8 @@ function Y = Calcul_Uniforme(borne_a,borne_b,iteration)
     end
 
     histplot(40,Y)
-    x = [min(Y):.01:max(Y)];
-    y = x-0;
-    y = exp(-y^2/1);
-    y = 1/(2*sqrt(2*%pi))*y;
+    x = [min(Y):0.01:max(Y)];
+    y = exp(-(x)^2/2)/sqrt(2*%pi);
     plot2d(x,y,2);
 
 

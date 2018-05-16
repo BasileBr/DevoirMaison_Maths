@@ -8,8 +8,11 @@ function main()
     //getd('utils');
     getd('scripts');
     
-    Calcul_Uniforme(0,1,1000)
-
+    //[Somme,esperance,sigma,iteration] = Calcul_Uniforme(0,1,100)
+    //Affichage(Somme,esperance,sigma,iteration);
+    
+    [Somme,esperance,sigma,iteration] = Calcul_Normale(0,1,50000)
+    Affichage(Somme,esperance,sigma,iteration);
 endfunction
 
 main()

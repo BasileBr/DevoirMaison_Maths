@@ -25,10 +25,7 @@ function [X,esperance,sigma,iteration] = Calcul_Binomiale(n,p,iteration)
     var = esperance*(1-p);
     sigma = sqrt(var);
     
-//    for i = 1 :iteration
         X = grand(iteration,1,'bin',n,p) 
-//        Somme(i) = sum(X)
-//    end
 endfunction
 
 function Affichage_Normale(Somme,esperance,sigma,iteration)

@@ -1,3 +1,4 @@
+//Fonction pour calculer les valeurs de la loi Uniforme continue
 function [Somme,esperance,sigma,iteration] = Calcul_Uniforme(borne_a,borne_b,iteration)
     esperance = (borne_a+borne_b)/2;
     var = ((borne_b-borne_a)*(borne_b-borne_a))/12;
@@ -25,7 +26,7 @@ function [X,esperance,sigma,iteration] = Calcul_Binomiale(n,p,iteration)
     var = esperance*(1-p);
     sigma = sqrt(var);
     
-        X = grand(iteration,1,'bin',n,p) 
+    X = grand(iteration,1,'bin',n,p) 
 endfunction
 
 function Affichage_Normale(Somme,esperance,sigma,iteration)
@@ -43,11 +44,13 @@ function Affichage_Poisson(Somme,esperance,sigma,iteration)
 // for i = 1 :iteration
 //            Y(i) = Somme(i);
 //    end
-
-    histplot(40,Somme)
     x = [min(Somme):1:max(Somme)];
-    disp(x);
     y = ((esperance.^x)./factorial(x)).*exp(-esperance)
-    plot2d(x,y,2);
+    //cadre = [0 5 10 max(y)];
+    histplot(40,Somme);
+    //x = [min(Somme):1:max(Somme)];
+    //disp(x);
+    //y = ((esperance.^x)./factorial(x)).*exp(-esperance)
+    plot2d(x,y);
 endfunction
 

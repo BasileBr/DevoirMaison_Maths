@@ -20,15 +20,15 @@ function [Somme,esperance,sigma,iteration] = Calcul_Normale(mu,sigmaCarre,iterat
     end
 endfunction
 
-function [Somme,esperance,sigma,iteration] = Calcul_Binomiale(n,p,iteration)
+function [X,esperance,sigma,iteration] = Calcul_Binomiale(n,p,iteration)
     esperance = n*p;
-    var = esperance*(1-esperance);
+    var = esperance*(1-p);
     sigma = sqrt(var);
     
-    for i = 1 :iteration
+//    for i = 1 :iteration
         X = grand(iteration,1,'bin',n,p) 
-        Somme(i) = sum(X)
-    end
+//        Somme(i) = sum(X)
+//    end
 endfunction
 
 function Affichage_Normale(Somme,esperance,sigma,iteration)
@@ -43,13 +43,14 @@ function Affichage_Normale(Somme,esperance,sigma,iteration)
 endfunction
 
 function Affichage_Poisson(Somme,esperance,sigma,iteration)
-    for i = 1 :iteration
-            Y(i) = Somme(i);
-    end
+// for i = 1 :iteration
+//            Y(i) = Somme(i);
+//    end
 
-    histplot(40,Y)
-    x = [min(Y):1:max(Y)];
-    y = ((esperance^x)/factorial(x))*exp(-esperance)
+    histplot(40,Somme)
+    x = [min(Somme):1:max(Somme)];
+    disp(x);
+    y = ((esperance.^x)/factorial(x))*exp(-esperance)
     plot2d(x,y,2);
 endfunction
 

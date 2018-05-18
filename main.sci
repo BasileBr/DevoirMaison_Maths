@@ -17,7 +17,10 @@ function main()
     //[Somme,esperance,sigma,iteration] = Calcul_Binomiale(100,0.03,5000)
     //Affichage_Poisson(Somme,esperance,sigma,iteration);
     
-    Calcul_Exponentielle((1/100),5000)
+    //Calcul_Exponentielle((1/100),5000)
+    
+    [tabn,iteration] = Generateur_Bernouilli(1,0.5,1000);
+    [tab_Pas] = FairePas(tab_Bernouilli,iteration,1)
     
 endfunction
 

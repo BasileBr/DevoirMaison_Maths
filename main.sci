@@ -1,6 +1,6 @@
 funcprot(0);
-CHEMIN = 'C:\Users\Basile Bruhat\Documents\Seconde année\Maths\DM\DevoirMaison_Maths'; // A modifier pour avoir le bon chemin d'accès
-//CHEMIN = 'C:\Users\poiri\Desktop\ENSSAT\Maths\DM\DevoirMaison_Maths'; // A modifier pour avoir le bon chemin d'accès
+//CHEMIN = 'C:\Users\Basile Bruhat\Documents\Seconde année\Maths\DM\DevoirMaison_Maths'; // A modifier pour avoir le bon chemin d'accès
+CHEMIN = 'C:\Users\poiri\Desktop\ENSSAT\Maths\DM\DevoirMaison_Maths'; // A modifier pour avoir le bon chemin d'accès
 
 function main()
     
@@ -18,6 +18,7 @@ function main()
     //Affichage_Poisson(Somme,esperance,sigma,iteration);
     
     Calcul_Exponentielle((1/100),5000)
+    
 endfunction
 
 main()

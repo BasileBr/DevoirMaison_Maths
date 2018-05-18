@@ -41,16 +41,9 @@ function Affichage_Normale(Somme,esperance,sigma,iteration)
 endfunction
 
 function Affichage_Poisson(Somme,esperance,sigma,iteration)
-// for i = 1 :iteration
-//            Y(i) = Somme(i);
-//    end
     x = [min(Somme):1:max(Somme)];
     y = ((esperance.^x)./factorial(x)).*exp(-esperance)
-    //cadre = [0 5 10 max(y)];
     histplot(40,Somme);
-    //x = [min(Somme):1:max(Somme)];
-    //disp(x);
-    //y = ((esperance.^x)./factorial(x)).*exp(-esperance)
     plot2d(x,y);
 endfunction
 

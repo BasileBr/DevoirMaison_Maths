@@ -44,6 +44,6 @@ function Affichage_Poisson(Somme,esperance,sigma,iteration)
     x = [min(Somme):1:max(Somme)];
     y = ((esperance.^x)./factorial(x)).*exp(-esperance)
     histplot(40,Somme);
-    plot2d(x,y);
+    plot2d(x,y,2);
 endfunction
 
